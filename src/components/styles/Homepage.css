@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); */
+
+.homepage {
+    color:#ffffff;
+}
+
+.homepage__title {
+    width: 383px;
+    height: 96px;
+    display: flex;
+    /* font-family: 'Libre Baskerville', serif; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    align-items: center;
+    /* padding: 20px; */
+    
+}
+
+.homepage__description {
+    width: 611px;
+    height: 64px;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    opacity: 0.6;
+}

@@ -1,0 +1,24 @@
+.dashboard {
+    display: flex;
+    height: 624px;
+    width: 375px;
+}
+
+.likes {
+    display: flex;
+    flex-direction: column;
+    left: 6.1%;
+    right: 6.1%;
+    top: 6.1%;
+    bottom: 6.1%;
+}
+
+.onlineEvents{
+   display: flex;
+   border: 1px solid #ffffff;
+   /* border-radius: 25px; */
+}
+
+.onlineEventIcon {
+    height: 26px;
+}
