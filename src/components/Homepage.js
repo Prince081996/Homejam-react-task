@@ -1,15 +1,24 @@
 import React from 'react'
+import Banner from './Banner'
 import Dashboard from './Dashboard'
 import Header from './Header'
+import Reviews from './Reviews'
+import Upcomingshow from './UpcomingShow'
 import './styles/Homepage.css'
+import Review from './Review'
 
 function Homepage() {
     return (
         <div className="homepage">
             <Header />
-            <h1 className="homepage__title">Cari Cari</h1>
-            <span className="homepage__description">Live from their sofa to yours.Get closer to your favourite artists,and never miss out.</span>
+            <Banner />
+            <div className="middle">
             <Dashboard />
+            </div>
+            <div className="artist">
+            <Upcomingshow />
+            </div>
+            <Review />
         </div>
     )
 }

@@ -1,0 +1,47 @@
+.reviewCardMainWrapper {
+    display: flex;
+    flex-direction: column;
+    background: #111229;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.reviews {
+    /* margin-left: 7rem; */
+    height: 40px;
+    display: flex;
+    font-size: 32px;
+    line-height: 40px;
+    position: relative;
+    left:8%;
+    font-size: 32px;
+    font-family: Libre Baskerville;
+    line-height: 40px;
+}
+
+.container {
+    background: linear-gradient(
+143.63deg
+, #276C73 5.43%, #5293E8 110.6%);
+    margin-left: 5px;
+    border-radius: 16px;
+    border:0 !important;
+    background: #111229;
+}
+
+.container > MuiCardContent-root:last-child {
+    padding-top: 42px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    height: 250px;
+    margin-bottom: 10px;
+    background: #111229;
+
+}
+.container > MuiCard-root {
+    background: #111229;
+    color:#ffffff;
+}
