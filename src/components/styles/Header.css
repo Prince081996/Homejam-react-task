@@ -6,6 +6,9 @@
     color:#ffffff;
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header__logo {
@@ -25,6 +28,10 @@
 .header__SearchIcon {
     margin-right: -50px;
 }
+.header__SearchName {
+  margin-top:-0.1em;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px){
     .header__logo {
@@ -35,7 +42,8 @@
       .header__Search {
         width: 100%;
         align-items: center;
-        margin-left: 3em;
+        position: relative;
+        left: -4em
       }
       .header__SearchIcon {
         margin-right: 0;

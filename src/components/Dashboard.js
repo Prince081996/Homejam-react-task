@@ -7,8 +7,8 @@ function Dashboard() {
     return (
         <div className="circles">
             {circleData.map((c) => c.type === "like" ?
-            <Circles type={c.type} number={c.number_of_likes} content={c.dailyLikes} /> : 
-            <Circles type={c.type} number={c.number_of_events} content={c.onlineEvents} />
+            <Circles key={c.id} type={c.type} number={c.number_of_likes} content={c.dailyLikes} /> : 
+            <Circles key={c.id} type={c.type} number={c.number_of_events} content={c.onlineEvents} />
             )}
         </div>
     )

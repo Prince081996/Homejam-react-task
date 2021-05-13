@@ -2,7 +2,6 @@ import React from 'react'
 import Banner from './Banner'
 import Dashboard from './Dashboard'
 import Header from './Header'
-import Reviews from './Reviews'
 import Upcomingshow from './UpcomingShow'
 import './styles/Homepage.css'
 import Review from './Review'
@@ -19,7 +18,7 @@ function Homepage() {
             <Upcomingshow />
             </div>
             <Review />
-           <footer style={{height:"150px"}}></footer>
+           <footer className="footer"></footer>
         </div>
     )
 }

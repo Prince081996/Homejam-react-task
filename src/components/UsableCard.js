@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Container,
   Grid,
   Typography,
   Card,
@@ -17,7 +16,7 @@ const UsableCard = () => {
         <div>
              <Grid className={classes.gridparent} container spacing={4}>
                 <Grid className={classes.grid} item sm={3}>
-                  <div className="card">
+                  <div className={classes.mobileScreen}>
             <Card className={classes.root1}>
             <CardMedia className={classes.image} image="images/customer1.png" />
             <CardContent>
@@ -43,7 +42,7 @@ const useStyles =  makeStyles((theme) => ({
       display:'flex',
       width:'70%',
       position:'relative',
-      right:'11%'
+      right:'11%',
   },
   root1:{
       background: '#111229',
@@ -54,11 +53,22 @@ const useStyles =  makeStyles((theme) => ({
       width:'350px',
       height:'240px',
       position:'relative',
-      left:'24%',
       marginTop:'8rem',
-      [theme.breakpoints.down('xm')]: {
-        display:'none'
-    }
+      [theme.breakpoints.down('sm')]: {
+        boxShadow: '12px -12px #276C73',
+        background:
+        'linearGradient(top right #276C73 5.43%, #5293E8 110.6%)',
+        boxSizing: 'border-box',
+    cursor: 'pointer',
+    display: "block",
+    height: '267px',
+    marginTop: '10em',
+    marginLeft:'1em',
+    marginRight:'1em',
+    padding: '0px',
+    position: 'relative',
+    width: 'auto'
+    },
   },
   image:{
       height:'50px',
@@ -82,9 +92,6 @@ const useStyles =  makeStyles((theme) => ({
   content:{
       marginTop:'-1.3rem',
   },
-  gridParent:{
-    margin:'-20px'
-  }
 }))
 
 export default UsableCard

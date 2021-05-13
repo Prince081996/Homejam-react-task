@@ -11,14 +11,14 @@ function Upcomingshow() {
           </div>
           <div className="mobileView"> 
           {artistData.map(artist => 
-          <div className="artists">
+          <div key={artist.artistName} className="artists">
              <div className="upcomingShow">
               <img src={artist.image} alt="profileImage" />
               {artist.artistType === "Bollywood" ?   <span key={artist.artistName} className="bollywood">{artist.artistType}</span> :  <span className="folk">{artist.artistType}</span> }
                 <span className="name">{artist.artistName}</span>
                 <span className="moreInfo">More Info</span>
-                <ArrowForwardIcon />   
-                </div> 
+                <ArrowForwardIcon className="arrow" /> 
+                </div>  
           </div>
           )} 
           </div>       

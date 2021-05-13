@@ -112,7 +112,8 @@ margin-left: 20px;
     .upcomingShow {
     height: 250px;
     width: 250px;
-    margin-left: -10em
+    margin-left: -10em;
+    margin-bottom:5em
     }
     .mobileView {
         display: flex;
@@ -120,12 +121,15 @@ margin-left: 20px;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
-    .upcomingShow > img {
-
-    }
     .artists {
         width: 300px;
+    }
+    .name {
+        margin-bottom: 1em;
+    }
+    .upcomingShow > .MuiSvgIcon-root {
+        position: relative;
+    top: -0.9em;
     }
 }
 
