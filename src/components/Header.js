@@ -12,7 +12,9 @@ function Header() {
         <span className="header__SearchName">Search</span>
         <span className="header__SearchName">Help</span>
         <span className="header__SearchName">Account</span>
-        <LocalMallIcon />
+        <div className="bagIcon">
+        <LocalMallIcon/>
+        </div>
       </div>
     </div>
   );

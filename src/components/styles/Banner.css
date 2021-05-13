@@ -8,8 +8,18 @@
     margin-top: 168px;
     margin-bottom: 220px;
     margin-left: 7rem;
-    /* padding: 20px; */
-    
+}
+
+@media only screen and (max-width: 600px){
+    .banner__title {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 10rem
+        }
+    .banner__content {
+        position: relative;
+        left: -4em;
+    }    
 }
 
 .banner__content {

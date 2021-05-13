@@ -104,3 +104,31 @@ margin-left: 20px;
     align-items: center;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px){
+    .heading > span{
+    margin-left: -5rem;
+    }
+    .upcomingShow {
+    height: 250px;
+    width: 250px;
+    margin-left: -10em
+    }
+    .mobileView {
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .upcomingShow > img {
+
+    }
+    .artists {
+        width: 300px;
+    }
+}
+
+.mobileView {
+    display: flex;
+}

@@ -8,7 +8,8 @@ function Upcomingshow() {
         <div className="upcomingShows">
           <div className="heading">
             <span>Upcoming Shows</span>
-          </div> 
+          </div>
+          <div className="mobileView"> 
           {artistData.map(artist => 
           <div className="artists">
              <div className="upcomingShow">
@@ -19,7 +20,8 @@ function Upcomingshow() {
                 <ArrowForwardIcon />   
                 </div> 
           </div>
-          )}        
+          )} 
+          </div>       
         </div>
     )
 }

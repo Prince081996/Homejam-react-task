@@ -10,6 +10,33 @@ import {
 import {makeStyles} from '@material-ui/core/styles'
 import './styles/Review.css'
 
+const UsableCard = () => {
+    const classes = useStyles()
+    const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing."
+    return (
+        <div>
+             <Grid className={classes.gridparent} container spacing={4}>
+                <Grid className={classes.grid} item sm={3}>
+                  <div className="card">
+            <Card className={classes.root1}>
+            <CardMedia className={classes.image} image="images/customer1.png" />
+            <CardContent>
+              <Typography className={classes.name} variant="h5">
+                Hellen Jummy
+              </Typography>
+              <Typography className={classes.country} variant="subtitle1">
+                Palo Alto, CA
+              </Typography>
+              <Typography className={classes.content} variant="subtitle1">{content}</Typography>
+            </CardContent>
+          </Card>
+          </div>
+          </Grid>
+          </Grid>
+        </div>
+    )
+}
+
 const useStyles =  makeStyles((theme) => ({
   root:{
       height:'100vh',
@@ -28,7 +55,10 @@ const useStyles =  makeStyles((theme) => ({
       height:'240px',
       position:'relative',
       left:'24%',
-      marginTop:'8rem'
+      marginTop:'8rem',
+      [theme.breakpoints.down('xm')]: {
+        display:'none'
+    }
   },
   image:{
       height:'50px',
@@ -56,29 +86,5 @@ const useStyles =  makeStyles((theme) => ({
     margin:'-20px'
   }
 }))
-const UsableCard = () => {
-    const classes = useStyles()
-    const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing."
-    return (
-        <div>
-             <Grid className={classes.gridparent} container spacing={4}>
-                <Grid className={classes.grid} item sm={3}>
-            <Card className={classes.root1}>
-            <CardMedia className={classes.image} image="images/customer1.png" />
-            <CardContent>
-              <Typography className={classes.name} variant="h5">
-                Hellen Jummy
-              </Typography>
-              <Typography className={classes.country} variant="subtitle1">
-                Palo Alto, CA
-              </Typography>
-              <Typography className={classes.content} variant="subtitle1">{content}</Typography>
-            </CardContent>
-          </Card>
-          </Grid>
-          </Grid>
-        </div>
-    )
-}
 
 export default UsableCard

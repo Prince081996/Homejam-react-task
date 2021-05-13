@@ -19,6 +19,7 @@ function Homepage() {
             <Upcomingshow />
             </div>
             <Review />
+           <footer style={{height:"150px"}}></footer>
         </div>
     )
 }

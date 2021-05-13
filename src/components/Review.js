@@ -23,8 +23,32 @@ export default class SimpleSlider extends Component {
         <div>
           <div className="prev-slick-arrow"><ArrowBackIcon /> </div>
         </div>
-      )
-    };
+      ),
+
+      responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            arrows: false,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            arrows: false,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        }
+      ]
+      }
     return (
       <div className="slider-wrapper">
          <h2 className="reviews">Reviews</h2>

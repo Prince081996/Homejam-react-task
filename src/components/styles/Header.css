@@ -25,3 +25,29 @@
 .header__SearchIcon {
     margin-right: -50px;
 }
+
+@media only screen and (max-width: 600px){
+    .header__logo {
+        display: unset;
+        position: unset;
+        left: 0;
+      }
+      .header__Search {
+        width: 100%;
+        align-items: center;
+        margin-left: 3em;
+      }
+      .header__SearchIcon {
+        margin-right: 0;
+      }
+      .header__Search > .MuiSvgIcon-root {
+        margin-left: 0.8em;
+       margin-right: -0.4em
+      }
+      .header__SearchName {
+          margin-left: 0.8em;
+      }
+      .bagIcon{
+          display: none;
+      }
+    }
