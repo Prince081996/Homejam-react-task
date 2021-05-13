@@ -18,12 +18,12 @@ export default class Review extends Component {
       slidesToScroll: 2,
       nextArrow: (
         <div>
-          <div className="next-slick-arrow"> <BackwardArrow/> </div>
+          <div className="next-slick-arrow"> <ForwardArrow/> </div>
         </div>
       ),
       prevArrow: (
         <div>
-          <div className="prev-slick-arrow"><ForwardArrow/> </div>
+          <div className="prev-slick-arrow"><BackwardArrow/> </div>
         </div>
       ),
 

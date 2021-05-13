@@ -1,4 +1,4 @@
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowForwardIcon from '@material-ui/icons/ArrowBack';
 
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -13,7 +13,7 @@ const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
       type="button"
       style={{color:'white'}}
     >
-     <ArrowBackIcon />
+     <ArrowForwardIcon />
     </button>
   );
 
