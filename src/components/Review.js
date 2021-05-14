@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import UsableCard from "./UsableCard";
 import ForwardArrow from './Arrow/ForwardArrow'
 import BackwardArrow from './Arrow/BackwardArrow'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './styles/Review.css';
 
 
@@ -18,7 +19,7 @@ export default class Review extends Component {
       slidesToScroll: 2,
       nextArrow: (
         <div>
-          <div className="next-slick-arrow"> <ForwardArrow/> </div>
+          <div className="next-slick-arrow"> <ArrowForwardIcon/> </div>
         </div>
       ),
       prevArrow: (
