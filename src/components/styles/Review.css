@@ -42,7 +42,12 @@
   font-weight: normal;
   font-size: 20px;
   position: relative;
-  top:5rem
+  top:5rem;
+  cursor:pointer;
+}
+
+.reviews > h2 {
+  cursor: pointer;
 }
 
 .reviews:after {

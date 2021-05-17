@@ -15,6 +15,7 @@
     display: flex;
     position: relative;
     left:6.6%;
+    cursor: pointer;
 }
 
 .header__Search {
@@ -27,6 +28,7 @@
 
 .header__SearchIcon {
     margin-right: -50px;
+    margin-top: -0.1em;
 }
 .header__SearchName {
   margin-top:-0.1em;

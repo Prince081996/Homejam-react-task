@@ -1,18 +1,18 @@
 import React from 'react'
 import Banner from './Banner'
-import Dashboard from './Dashboard'
 import Header from './Header'
 import Upcomingshow from './UpcomingShow'
-import './styles/Homepage.css'
 import Review from './Review'
+import CircleSlider from './CircleSlider'
+import './styles/Homepage.css'
 
 function Homepage() {
     return (
         <div className="homepage">
             <Header />
             <Banner />
-            <div className="middle">
-            <Dashboard />
+            <div className="custom">
+            <CircleSlider />
             </div>
             <div className="artist">
             <Upcomingshow />

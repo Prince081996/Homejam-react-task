@@ -38,12 +38,22 @@
 
 }
 
+.custom {
+    margin-top: 20em;
+    margin-left: 8em;
+    cursor: pointer;
+}
+
 .footer {
-    height:200px;
+    height:305px;
 }
 @media only screen and (max-width: 600px){
     .footer {
-        height: 220px;
+        height: 250px;
+    }
+
+    .custom {
+        margin-left:0.9em;
     }
 }
 

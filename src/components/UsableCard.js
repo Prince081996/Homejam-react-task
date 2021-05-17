@@ -54,6 +54,7 @@ const useStyles =  makeStyles((theme) => ({
       height:'240px',
       position:'relative',
       marginTop:'8rem',
+      cursor:'pointer',
       [theme.breakpoints.down('sm')]: {
         boxShadow: '12px -12px #276C73',
         background:
